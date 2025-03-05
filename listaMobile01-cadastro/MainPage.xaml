@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="listaMobile01_cadastro.MainPage">
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style
+                x:Name="styEntryBorda"
+                x:Key="styEntryBorda"
+                TargetType="Border">
+                <Setter Property="Stroke" Value="Black"/>
+                <Setter Property="StrokeThickness" Value="1"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30"
+            Spacing="20"
+            BackgroundColor="White">
+
+            <Label
+                x:Name="lblRegistro"
+                Text="Registro Acadêmico"
+                TextColor="black"
+                VerticalTextAlignment="End"/>
+            <Border Style="{StaticResource styEntryBorda}">
+                <Entry
+                    x:Name="etrRegistro"
+                    TextColor="Black"/>
+            </Border>
+
+
+            <Label
+                x:Name="lblNome"
+                Text="Nome completo"
+                TextColor="black"
+                VerticalTextAlignment="End"/>
+            <Border Style="{StaticResource styEntryBorda}">
+                <Entry
+                x:Name="etrNome"
+                TextColor="Black"/>
+            </Border>
+
+            <Label
+                x:Name="lblDataNasc"
+                Text="Data de nascimento"
+                TextColor="black"
+                VerticalTextAlignment="End"/>
+            <Border Style="{StaticResource styEntryBorda}">
+                <Entry
+                x:Name="etrData"
+                TextColor="Black"/>
+            </Border>
+
+            <Label
+                x:Name="lblSexo"
+                Text="Sexo"
+                TextColor="black"
+                VerticalTextAlignment="End"/>
+            <Border Style="{StaticResource styEntryBorda}">
+                <Picker
+                    x:Name="pckSexo"
+                    BackgroundColor="White"
+                    TextColor="Black"
+                    >
+                    <Picker.Items>
+                        <x:String>Feminino</x:String>
+                        <x:String>Masculino</x:String>
+                    </Picker.Items>
+                </Picker>
+            </Border>
+
+            <Label
+                x:Name="lblEmail"
+                Text="Email"
+                TextColor="black"
+                VerticalTextAlignment="End"/>
+            <Border Style="{StaticResource styEntryBorda}">
+                <Entry
+                x:Name="etrEmail"
+                TextColor="Black"/>
+            </Border>
+
+            <Label
+                x:Name="lblCpf"
+                Text="Cpf"
+                TextColor="black"
+                VerticalTextAlignment="End"/>
+            <Border Style="{StaticResource styEntryBorda}">
+                <Entry
+                x:Name="etrCpf"
+                TextColor="Black"/>
+            </Border>
+
+            <Label
+                x:Name="lblRg"
+                Text="Rg"
+                TextColor="black"
+                VerticalTextAlignment="End"/>
+            <Border Style="{StaticResource styEntryBorda}">
+                <Entry
+                x:Name="etrRg"
+                TextColor="Black"/>
+            </Border>
+
+            <Label
+                x:Name="lblAuxilio"
+                Text="Auxílio transporte?"
+                TextColor="black"
+                VerticalTextAlignment="End"/>
+            <HorizontalStackLayout>
+                <CheckBox
+                    x:Name="cboxAuxilio"
+                    VerticalOptions="Center"/>
+                <Label
+                    x:Name="lblAuxilioTxt"
+                    Text="Sim"
+                    TextColor="Black"
+                    VerticalOptions="Center"/>
+            </HorizontalStackLayout>
+
+            <Border Style="{StaticResource styEntryBorda}">
+                <Button
+                x:Name="btnCadastrar"
+                Text="Cadastrar"
+                TextColor="Black"
+                BackgroundColor="LightGray"
+                CornerRadius="0"/>
+            </Border>
+
+            <Border Style="{StaticResource styEntryBorda}">
+                <Button
+                x:Name="btnLimpar"
+                Text="Limpar"
+                TextColor="Black"
+                BackgroundColor="LightGray"
+                CornerRadius="0"
+                />
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

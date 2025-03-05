@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="listaMobile01_CalcPadrao.MainPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style
+                x:Name="styBotaoBorda"
+                x:Key="styBotaoBorda"
+                TargetType="Border">
+                <Setter Property="Stroke" Value="Black"/>
+                <Setter Property="StrokeThickness" Value="1"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid
+        Padding="30 20 30 20"
+        RowSpacing="20"
+        ColumnSpacing="10"
+        BackgroundColor="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.25*"></RowDefinition>
+            <RowDefinition Height="0.10*"></RowDefinition>
+            <RowDefinition Height="0.10*"></RowDefinition>
+            <RowDefinition Height="0.10*"></RowDefinition>
+            <RowDefinition Height="0.10*"></RowDefinition>
+            <RowDefinition Height="0.10*"></RowDefinition>
+            <RowDefinition Height="0.10*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Border
+                Grid.ColumnSpan="4"
+                Grid.Row="0"
+                Stroke="Black"
+                StrokeThickness="1">
+            <Label
+                    x:Name="lblDisplay"
+                    BackgroundColor="White"/>
+        </Border>
+
+        <!--Linha 1-->
+        <Border Style="{StaticResource styBotaoBorda}"
+                Grid.Column="0"
+                Grid.Row="1">
+            <Button
+                    x:Name="btnPorcentagem"
+                    Text="%"
+                    BackgroundColor="LightGray"
+                    CornerRadius="0"/>
+        </Border>
+
+        <Border Style="{StaticResource styBotaoBorda}"
+                Grid.Column="1"
+                Grid.Row="1">
+            <Button
+                    x:Name="btnClearEntry"
+                    Text="CE"
+                    BackgroundColor="LightGray"
+                    CornerRadius="0"/>
+        </Border>
+
+        <Border Style="{StaticResource styBotaoBorda}"
+                Grid.Column="2"
+                Grid.Row="1">
+            <Button
+                    x:Name="btnClear"
+                    Text="C"
+                    BackgroundColor="LightGray"
+                    CornerRadius="0"/>
+        </Border>
+
+        <Border Style="{StaticResource styBotaoBorda}"
+                Grid.Column="3"
+                Grid.Row="1">
+            <Button
+                    x:Name="btnBack"
+                    Text="&lt;&lt;&lt;"
+                    BackgroundColor="LightGray"
+                    CornerRadius="0"/>
+        </Border>
+
+        <!--Linha 2-->
+        <Border Style="{StaticResource styBotaoBorda}"
+                Grid.Column="0"
+                Grid.Row="2">
+            <Button
+                    x:Name="btnFracao"
+                    Text="1/X"
+                    BackgroundColor="LightGray"
+                    CornerRadius="0"/>
+        </Border>
+
+        <Border Style="{StaticResource styBotaoBorda}"
+                Grid.Column="1"
+                Grid.Row="2">
+            <Button
+                    x:Name="btnPotencia"
+                    Text="X²"
+                    BackgroundColor="LightGray"
+                    CornerRadius="0"/>
+        </Border>
+
+        <Border Style="{StaticResource styBotaoBorda}"
+                Grid.Column="2"
+                Grid.Row="2">
+            <Button
+                    x:Name="btnRaiz"
+                    Text="Raiz²"
+                    BackgroundColor="LightGray"
+                    CornerRadius="0"/>
+        </Border>
+
+        <Border Style="{StaticResource styBotaoBorda}"
+                Grid.Column="3"
+                Grid.Row="2">
+            <Button
+                    x:Name="btnDivisao"
+                    Text="/"
+                    BackgroundColor="LightGray"
+                    CornerRadius="0"/>
+        </Border>
+
+        <!--Linha 3-->
+        <Border Style="{StaticResource styBotaoBorda}"
+                Grid.Column="0"
+                Grid.Row="3">
+            <Button
+                    x:Name="btnSete"
+                    Text="7"
+                    BackgroundColor="LightGray"
+                    CornerRadius="0"/>
+        </Border>
+
+        <Border Style="{StaticResource styBotaoBorda}"
+                Grid.Column="1"
+                Grid.Row="3">
+            <Button
+                    x:Name="btnOito"
+                    Text="8"
+                    BackgroundColor="LightGray"
+                    CornerRadius="0"/>
+        </Border>
+
+        <Border Style="{StaticResource styBotaoBorda}"
+                Grid.Column="2"
+                Grid.Row="3">
+            <Button
+                    x:Name="btnNove"
+                    Text="9"
+                    BackgroundColor="LightGray"
+                    CornerRadius="0"/>
+        </Border>
+
+        <Border Style="{StaticResource styBotaoBorda}"
+                Grid.Column="3"
+                Grid.Row="3">
+            <Button
+                    x:Name="btnMult"
+                    Text="X"
+                    BackgroundColor="LightGray"
+                    CornerRadius="0"/>
+        </Border>
+
+        <!--Linha 4-->
+        <Border Style="{StaticResource styBotaoBorda}"
+                Grid.Column="0"
+                Grid.Row="4">
+            <Button
+                    x:Name="btnQuatro"
+                    Text="4"
+                    BackgroundColor="LightGray"
+                    CornerRadius="0"/>
+        </Border>
+
+        <Border Style="{StaticResource styBotaoBorda}"
+                Grid.Column="1"
+                Grid.Row="4">
+            <Button
+                    x:Name="btnCinco"
+                    Text="5"
+                    BackgroundColor="LightGray"
+                    CornerRadius="0"/>
+        </Border>
+
+        <Border Style="{StaticResource styBotaoBorda}"
+                Grid.Column="2"
+                Grid.Row="4">
+            <Button
+                    x:Name="btnSeis"
+                    Text="6"
+                    BackgroundColor="LightGray"
+                    CornerRadius="0"/>
+        </Border>
+
+        <Border Style="{StaticResource styBotaoBorda}"
+                Grid.Column="3"
+                Grid.Row="4">
+            <Button
+                    x:Name="btnSubt"
+                    Text="-"
+                    BackgroundColor="LightGray"
+                    CornerRadius="0"/>
+        </Border>
+
+        <!--Linha 5-->
+        <Border Style="{StaticResource styBotaoBorda}"
+                Grid.Column="0"
+                Grid.Row="5">
+            <Button
+                    x:Name="btnUm"
+                    Text="1"
+                    BackgroundColor="LightGray"
+                    CornerRadius="0"/>
+        </Border>
+
+        <Border Style="{StaticResource styBotaoBorda}"
+                Grid.Column="1"
+                Grid.Row="5">
+            <Button
+                    x:Name="btnDois"
+                    Text="2"
+                    BackgroundColor="LightGray"
+                    CornerRadius="0"/>
+        </Border>
+
+        <Border Style="{StaticResource styBotaoBorda}"
+                Grid.Column="2"
+                Grid.Row="5">
+            <Button
+                    x:Name="btnTres"
+                    Text="3"
+                    BackgroundColor="LightGray"
+                    CornerRadius="0"/>
+        </Border>
+
+        <Border Style="{StaticResource styBotaoBorda}"
+                Grid.Column="3"
+                Grid.Row="5">
+            <Button
+                    x:Name="btnSoma"
+                    Text="+"
+                    BackgroundColor="LightGray"
+                    CornerRadius="0"/>
+        </Border>
+
+        <!--Linha 6-->
+        <Border Style="{StaticResource styBotaoBorda}"
+                Grid.Column="0"
+                Grid.Row="6">
+            <Button
+                    x:Name="btnMaisoumenos"
+                    Text="+/-"
+                    BackgroundColor="LightGray"
+                    CornerRadius="0"/>
+        </Border>
+
+        <Border Style="{StaticResource styBotaoBorda}"
+                Grid.Column="1"
+                Grid.Row="6">
+            <Button
+                    x:Name="btnZero"
+                    Text="0"
+                    BackgroundColor="LightGray"
+                    CornerRadius="0"/>
+        </Border>
+
+        <Border Style="{StaticResource styBotaoBorda}"
+                Grid.Column="2"
+                Grid.Row="6">
+            <Button
+                    x:Name="btnVirgula"
+                    Text=","
+                    BackgroundColor="LightGray"
+                    CornerRadius="0"/>
+        </Border>
+
+        <Border Style="{StaticResource styBotaoBorda}"
+                Grid.Column="3"
+                Grid.Row="6">
+            <Button
+                    x:Name="btnIgual"
+                    Text="="
+                    BackgroundColor="LightGray"
+                    CornerRadius="0"/>
+        </Border>
+
+    </Grid>
+    
+</ContentPage>

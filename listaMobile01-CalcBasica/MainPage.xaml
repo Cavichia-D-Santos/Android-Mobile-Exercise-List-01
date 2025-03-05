@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="listaMobile01_CalcBasica.MainPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style
+                x:Name="styEntryBorda"
+                x:Key="styEntryBorda"
+                TargetType="Border">
+                <Setter Property="Stroke" Value="Black"/>
+                <Setter Property="StrokeThickness" Value="1"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid
+        Padding="20"
+        ColumnSpacing="15"
+        RowSpacing="15"
+        BackgroundColor="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <!--Somar-->
+        <Label
+            x:Name="lvlVal1"
+            Text="Valor 1"
+            TextColor="black"
+            Grid.Column="0"
+            Grid.Row="0"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="End"/>
+
+        <Label
+            x:Name="lvlVal2"
+            Text="Valor 2"
+            TextColor="black"
+            Grid.Column="1"
+            Grid.Row="0"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="End"/>
+        
+        <Border Style="{StaticResource styEntryBorda}"
+                Grid.Column="0"
+                Grid.Row="1">
+            <Entry
+                x:Name="etrVal1"
+                BackgroundColor="White"
+                TextColor="black"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="End"/>
+        </Border>
+
+        <Border Style="{StaticResource styEntryBorda}"
+                Grid.Column="1"
+                Grid.Row="1">
+            <Entry
+                x:Name="etrVal2"
+                BackgroundColor="White"
+                TextColor="black"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="End"/>
+        </Border>
+
+        <Button
+            x:Name="btnSomar"
+            Grid.Column="2"
+            Grid.Row="1"
+            Text="Somar"
+            TextColor="Black"
+            BackgroundColor="LightGray"
+            BorderColor="Black"
+            BorderWidth="1"
+            />
+
+            <!--Subtrair-->
+        <Label
+            x:Name="lvlVal3"
+            Text="Valor 3"
+            TextColor="black"
+            Grid.Column="0"
+            Grid.Row="2"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="End"/>
+
+        <Label
+            x:Name="lvlVal4"
+            Text="Valor 4"
+            TextColor="black"
+            Grid.Column="1"
+            Grid.Row="2"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="End"/>
+
+        <Border Style="{StaticResource styEntryBorda}"
+                Grid.Column="0"
+                Grid.Row="3">
+            <Entry
+                x:Name="etrVal3"
+                BackgroundColor="White"
+                TextColor="black"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="End"/>
+        </Border>
+
+        <Border Style="{StaticResource styEntryBorda}"
+                Grid.Column="1"
+                Grid.Row="3">
+            <Entry
+                x:Name="etrVal4"
+                BackgroundColor="White"
+                TextColor="black"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="End"/>
+        </Border>
+
+        <Button
+            x:Name="btnSubtrair"
+            Grid.Column="2"
+            Grid.Row="3"
+            Text="Subtrair"
+            TextColor="Black"
+            BackgroundColor="LightGray"
+            BorderColor="Black"
+            BorderWidth="1"/>
+
+        <!--Multiplicar-->
+        <Label
+            x:Name="lvlVal5"
+            Text="Valor 5"
+            TextColor="black"
+            Grid.Column="0"
+            Grid.Row="4"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="End"/>
+
+        <Label
+            x:Name="lvlVal6"
+            Text="Valor 6"
+            TextColor="black"
+            Grid.Column="1"
+            Grid.Row="4"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="End"/>
+
+        <Border Style="{StaticResource styEntryBorda}"
+                Grid.Column="0"
+                Grid.Row="5">
+            <Entry
+                x:Name="etrVal5"
+                BackgroundColor="White"
+                TextColor="black"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="End"/>
+        </Border>
+
+        <Border Style="{StaticResource styEntryBorda}"
+                Grid.Column="1"
+                Grid.Row="5">
+            <Entry
+                x:Name="etrVal6"
+                BackgroundColor="White"
+                TextColor="black"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="End"/>
+        </Border>
+
+        <Button
+            x:Name="btnMult"
+            Grid.Column="2"
+            Grid.Row="5"
+            Text="Multiplicar"
+            TextColor="Black"
+            BackgroundColor="LightGray"
+            BorderColor="Black"
+            BorderWidth="1"/>
+
+        <!--Dividir-->
+        <Label
+            x:Name="lvlVal7"
+            Text="Valor 7"
+            TextColor="black"
+            Grid.Column="0"
+            Grid.Row="6"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="End"/>
+
+        <Label
+            x:Name="lvlVal8"
+            Text="Valor 8"
+            TextColor="black"
+            Grid.Column="1"
+            Grid.Row="6"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="End"/>
+
+        <Border Style="{StaticResource styEntryBorda}"
+                Grid.Column="0"
+                Grid.Row="7">
+            <Entry
+                x:Name="etrVal7"
+                BackgroundColor="White"
+                TextColor="black"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="End"/>
+        </Border>
+
+        <Border Style="{StaticResource styEntryBorda}"
+                Grid.Column="1"
+                Grid.Row="7">
+            <Entry
+                x:Name="etrVal8"
+                BackgroundColor="White"
+                TextColor="black"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="End"/>
+        </Border>
+
+        <Button
+            x:Name="btnDividir"
+            Grid.Column="2"
+            Grid.Row="7"
+            Text="Dividir"
+            TextColor="Black"
+            BackgroundColor="LightGray"
+            BorderColor="Black"
+            BorderWidth="1"/>
+
+    </Grid>
+
+</ContentPage>

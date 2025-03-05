@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="listaMobile01.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30"
+            Spacing="30"
+            BackgroundColor="White"
+            >
+            
+            <Label
+                x:Name="lblNome"
+                Text="Nome"
+                TextColor="Black"
+                VerticalTextAlignment="End"/>
+
+            <Entry
+                x:Name="etrNome"
+                Placeholder="Insira seu nome"
+                TextColor="Black"/>
+
+            <Label
+                x:Name="lblIdade"
+                Text="Idade atual"
+                TextColor="Black"
+                VerticalTextAlignment="End"/>
+
+            <Entry
+                x:Name="etrIdade"
+                Placeholder="Insira sua idade"
+                TextColor="Black"/>
+
+            <Button
+                x:Name="btnCalcular"
+                Text="Calcular dias vividos"
+                TextColor="Black"
+                BackgroundColor="LightGray"
+                BorderColor="Black"
+                BorderWidth="2"
+                CornerRadius="0"/>
+
+            <Button
+                x:Name="btnLimpar"
+                Text="Limpar campos"
+                TextColor="Black"
+                BackgroundColor="LightGray"
+                BorderColor="Black"
+                BorderWidth="2"
+                CornerRadius="0"/>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
