@@ -51,8 +51,8 @@
                 VerticalTextAlignment="End"/>
             <Border Style="{StaticResource styEntryBorda}">
                 <Entry
-                x:Name="etrData"
-                TextColor="Black"/>
+                    x:Name="etrData"
+                    TextColor="Black"/>
             </Border>
 
             <Label
@@ -124,11 +124,12 @@
 
             <Border Style="{StaticResource styEntryBorda}">
                 <Button
-                x:Name="btnCadastrar"
-                Text="Cadastrar"
-                TextColor="Black"
-                BackgroundColor="LightGray"
-                CornerRadius="0"/>
+                    x:Name="btnCadastrar"
+                    Text="Cadastrar"
+                    TextColor="Black"
+                    BackgroundColor="LightGray"
+                    CornerRadius="0"
+                    Clicked="OnClickEnviaMensagemConfirmacao"/>
             </Border>
 
             <Border Style="{StaticResource styEntryBorda}">
@@ -138,7 +139,7 @@
                 TextColor="Black"
                 BackgroundColor="LightGray"
                 CornerRadius="0"
-                />
+                Clicked="OnClickLimpar"/>
             </Border>
 
         </VerticalStackLayout>

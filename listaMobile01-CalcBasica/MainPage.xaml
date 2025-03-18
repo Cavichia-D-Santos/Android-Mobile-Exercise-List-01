@@ -86,7 +86,7 @@
             BackgroundColor="LightGray"
             BorderColor="Black"
             BorderWidth="1"
-            />
+            Clicked="OnClickSomar"/>
 
             <!--Subtrair-->
         <Label
@@ -137,7 +137,8 @@
             TextColor="Black"
             BackgroundColor="LightGray"
             BorderColor="Black"
-            BorderWidth="1"/>
+            BorderWidth="1"
+            Clicked="OnClickSubtrair"/>
 
         <!--Multiplicar-->
         <Label
@@ -188,7 +189,8 @@
             TextColor="Black"
             BackgroundColor="LightGray"
             BorderColor="Black"
-            BorderWidth="1"/>
+            BorderWidth="1"
+            Clicked="OnClickMultiplicar"/>
 
         <!--Dividir-->
         <Label
@@ -239,7 +241,8 @@
             TextColor="Black"
             BackgroundColor="LightGray"
             BorderColor="Black"
-            BorderWidth="1"/>
+            BorderWidth="1"
+            Clicked="OnClickDividir"/>
 
     </Grid>
 

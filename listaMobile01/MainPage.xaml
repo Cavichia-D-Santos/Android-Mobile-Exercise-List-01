@@ -39,7 +39,8 @@
                 BackgroundColor="LightGray"
                 BorderColor="Black"
                 BorderWidth="2"
-                CornerRadius="0"/>
+                CornerRadius="0"
+                Clicked="OnClickCalcularDiasVividos"/>
 
             <Button
                 x:Name="btnLimpar"
@@ -48,7 +49,8 @@
                 BackgroundColor="LightGray"
                 BorderColor="Black"
                 BorderWidth="2"
-                CornerRadius="0"/>
+                CornerRadius="0"
+                Clicked="OnClickLimpar"/>
             
         </VerticalStackLayout>
     </ScrollView>

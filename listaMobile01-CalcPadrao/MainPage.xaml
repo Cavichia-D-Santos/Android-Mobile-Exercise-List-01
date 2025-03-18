@@ -16,7 +16,7 @@
     </ContentPage.Resources>
 
     <Grid
-        Padding="30 20 30 20"
+        Padding="30"
         RowSpacing="20"
         ColumnSpacing="10"
         BackgroundColor="White">
